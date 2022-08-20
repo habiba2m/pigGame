@@ -10,5 +10,5 @@ The game of Pig is a very simple jeopardy dice game in which two players race to
 2 - 6: the number is added to the player's turn total and the player's turn continues.
 +hold - The turn total is added to the player's score and it becomes the opponent's turn.
 
-play here 🦦: 
+play now 🦦: 
 https://habiba2m.github.io/pigGame.github.io/
