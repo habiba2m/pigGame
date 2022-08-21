@@ -22,6 +22,27 @@ score1El.textContent = 0;
 diceEl.classList.add('hidden');
 let playing = true;
 
+const instructions = document.querySelector('.inst');
+const questionIcon = document.querySelector('.ques');
+const close = document.querySelector('.closetab');
+instructions.classList.add('hidden');
+
+close.addEventListener('click', function () {
+  playing = true;
+  instructions.classList.add('hidden');
+});
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    playing = true;
+    instructions.classList.add('hidden');
+  }
+});
+questionIcon.addEventListener('click', function () {
+  playing = false;
+  instructions.classList.remove('hidden');
+});
+
+
 function switchPlayer() {
   document.getElementById(`current--${active}`).textContent = 0;
   currentScore = 0;
