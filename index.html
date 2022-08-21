@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="icons8-dice-60.png" />
     <title>Pig Game</title>
   </head>
   <body>
@@ -27,6 +35,23 @@
       </section>
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <a class="ques"><i class="fa-solid fa-circle-question"></i></a>
+      <div class="inst">
+        <button class="closetab">&times;</button>
+        <p>
+          The game of Pig is a very simple jeopardy dice game in which two
+          players race to reach 100 points. Each turn, a player repeatedly rolls
+          a die until either a 1 is rolled or the player holds and scores the
+          sum of the rolls (i.e. the turn total). At any time during a player's
+          turn, the player is faced with two decisions: <br />
+          <span style="color: blue">roll</span> - If the player rolls a 1: the
+          player scores nothing and it becomes the opponent's turn. 2 - 6: the
+          number is added to the player's turn total and the player's turn
+          continues. <br />
+          <span style="color: blue">hold</span> - The turn total is added to the
+          player's score and it becomes the opponent's turn.
+        </p>
+      </div>
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
