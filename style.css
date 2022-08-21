@@ -169,3 +169,69 @@ main {
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 1023px) {
+  /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+
+  body {
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    width: 50rem;
+    height: 30rem;
+  }
+
+  .player {
+    padding: 0;
+  }
+
+  .btn--new {
+    top: 20rem;
+  }
+  .btn--roll {
+    top: 26.30000000000001rem;
+  }
+  .btn--hold {
+    top: 32.099999999999994rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 0.2999999999999998rem 0.5rem;
+    border-radius: 5rem;
+  }
+
+  main {
+    width: 35rem;
+    height: 51rem;
+  }
+
+  .dice {
+    top: 13.5rem;
+    height: 6rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  .score {
+    font-size: 4rem;
+  }
+
+  .current {
+    font-size: 2rem;
+    width: 50%;
+    border-radius: 6px;
+    top: 15rem;
+  }
+
+  .current-score {
+    font-size: 3rem;
+  }
+}
