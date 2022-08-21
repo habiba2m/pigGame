@@ -17,10 +17,11 @@ const btnRoll = document.querySelector('.btn--roll');
 const currentScore0 = document.querySelector('#current--0');
 const currentScore1 = document.querySelector('#current--1');
 
+let playing = true;
 score0El.textContent = 0;
 score1El.textContent = 0;
+
 diceEl.classList.add('hidden');
-let playing = true;
 
 const instructions = document.querySelector('.inst');
 const questionIcon = document.querySelector('.ques');
@@ -41,7 +42,6 @@ questionIcon.addEventListener('click', function () {
   playing = false;
   instructions.classList.remove('hidden');
 });
-
 
 function switchPlayer() {
   document.getElementById(`current--${active}`).textContent = 0;
