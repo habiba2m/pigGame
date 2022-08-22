@@ -21,26 +21,34 @@ let playing = true;
 score0El.textContent = 0;
 score1El.textContent = 0;
 
+function hidden() {
+  playing = true;
+  instructions.classList.add('hidden');
+  overlay.classList.add('hidden');
+}
+
 diceEl.classList.add('hidden');
 
+const overlay = document.querySelector('.overlay');
 const instructions = document.querySelector('.inst');
 const questionIcon = document.querySelector('.ques');
 const close = document.querySelector('.closetab');
 instructions.classList.add('hidden');
+overlay.classList.add('hidden');
 
-close.addEventListener('click', function () {
-  playing = true;
-  instructions.classList.add('hidden');
-});
+close.addEventListener('click', hidden);
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
-    playing = true;
-    instructions.classList.add('hidden');
+    hidden();
   }
 });
+
+overlay.addEventListener('click', hidden);
+
 questionIcon.addEventListener('click', function () {
   playing = false;
   instructions.classList.remove('hidden');
+  overlay.classList.remove('hidden');
 });
 
 function switchPlayer() {
