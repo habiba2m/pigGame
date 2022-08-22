@@ -11,4 +11,4 @@ The game of Pig is a very simple jeopardy dice game in which two players race to
 +hold - The turn total is added to the player's score and it becomes the opponent's turn.
 
 play now 🦦: 
-https://habiba2m.github.io/pigGame.github.io/
+https://habiba2m.github.io/pigGame/
