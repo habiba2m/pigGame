@@ -1,4 +1,4 @@
-# pigGame.github.io
+# pigGame
 
 Built a game!
 Using html, css and javascript
